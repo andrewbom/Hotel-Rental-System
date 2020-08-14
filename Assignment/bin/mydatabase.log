@@ -1,0 +1,4 @@
+/*C3*/SET SCHEMA PUBLIC
+CREATE TABLE IF NOT EXISTS rooms (room_id VARCHAR(50) NOT NULL,num_of_bed INT NOT NULL,summary VARCHAR(300) NOT NULL,type INT NOT NULL,status INT NOT NULL,latest_maintenance_date VARCHAR(50),image VARCHAR(50),PRIMARY KEY (room_id))
+CREATE TABLE IF NOT EXISTS records (record_id VARCHAR(50) NOT NULL,room_id VARCHAR(50) NOT NULL,customer_id VARCHAR(50) NOT NULL,rent_date VARCHAR(50) NOT NULL,estimate_return_date VARCHAR(50) NOT NULL,actual_return_date VARCHAR(50),rental_fee DOUBLE,late_fee DOUBLE,returned BOOLEAN,PRIMARY KEY (record_id))
+DISCONNECT

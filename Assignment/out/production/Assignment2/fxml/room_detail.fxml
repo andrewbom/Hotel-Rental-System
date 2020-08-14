@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root hgap="30" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="GridPane"
+         vgap="15" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1">
+
+    <ImageView fx:id="image" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0"
+               GridPane.rowSpan="2"/>
+
+    <Label fx:id="name" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <font>
+            <Font name="Arial Bold" size="20.0"/>
+        </font>
+    </Label>
+
+    <Label text="Price:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+    </Label>
+    <Label text="Number of bed(s):" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+    </Label>
+    <Label text="Room status:" GridPane.columnIndex="0" GridPane.rowIndex="5">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+    </Label>
+    <Label text="Last maintenance date:" GridPane.columnIndex="0" GridPane.rowIndex="6">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+    </Label>
+    <Label text="Feature summary:" GridPane.columnIndex="0" GridPane.rowIndex="7">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+    </Label>
+
+    <Label fx:id="price" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Label fx:id="numOfBeds" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Label fx:id="status" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Label fx:id="lastMaintenanceDate" GridPane.columnIndex="1" GridPane.rowIndex="6">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+    <Label fx:id="summary" GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <font>
+            <Font name="Arial" size="15.0"/>
+        </font>
+    </Label>
+
+    <Label text="Rental Records:" GridPane.columnIndex="2" GridPane.rowIndex="0">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+    </Label>
+    <ListView fx:id="records" prefHeight="200" prefWidth="250" GridPane.columnIndex="2" GridPane.columnSpan="2"
+              GridPane.rowIndex="1" GridPane.rowSpan="7"/>
+
+    <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="8"
+          GridPane.rowSpan="2">
+
+        <Button fx:id="rentRoom" text="Rent">
+            <font>
+                <Font name="Arial" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="returnRoom" text="Return">
+            <HBox.margin>
+                <Insets left="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="performMaintenance" text="Perform Maintenance">
+            <HBox.margin>
+                <Insets left="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="completeMaintenance" text="Complete Maintenance">
+            <HBox.margin>
+                <Insets left="10.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Arial" size="14.0"/>
+            </font>
+        </Button>
+    </HBox>
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+</fx:root>

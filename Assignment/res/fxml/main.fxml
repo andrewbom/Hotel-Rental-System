@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.221"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <top>
+        <MenuBar fx:id="menuBar" prefHeight="25.0">
+            <Menu mnemonicParsing="false" text="Options">
+                <MenuItem mnemonicParsing="false" onAction="#showRoomsPage" text="Show Rooms"/>
+                <MenuItem mnemonicParsing="false" onAction="#showAddRoomPage" text="Add Room"/>
+                <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem mnemonicParsing="false" onAction="#showImportDialog" text="Import"/>
+                <MenuItem mnemonicParsing="false" onAction="#showExportDialog" text="Export"/>
+            </Menu>
+        </MenuBar>
+    </top>
+</BorderPane>
